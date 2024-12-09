@@ -2201,7 +2201,7 @@ input, select, textarea {
 /* Sidebar 隱藏樣式 */
 	#sidebar {
 		position: fixed;
-		left: -250px; /* 初始位置在螢幕外 */
+		left: 0;
 		top: 0;
 		width: 250px;
 		height: 100%;
