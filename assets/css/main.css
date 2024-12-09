@@ -2198,6 +2198,42 @@ input, select, textarea {
 			margin: 0;
 			padding: 0;
 		}
+/* Sidebar 隱藏樣式 */
+#sidebar {
+    position: fixed;
+    left: -250px; /* 初始位置在螢幕外 */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: left 0.3s ease; /* 添加動畫效果 */
+}
+
+/* 顯示側邊欄 */
+#sidebar.active {
+    left: 0; /* 顯示在螢幕左側 */
+}
+
+#sidebar section {
+    padding: 1em;
+}
+
+/* Sidebar Button */
+#sidebar-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 4px;
+}
 
 /* Footer */
 
