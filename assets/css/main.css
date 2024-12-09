@@ -2216,10 +2216,6 @@ input, select, textarea {
 		left: 0; /* 顯示在螢幕左側 */
 	}
 
-	#sidebar section {
-		padding: 1em;
-	}
-
 	/* Sidebar Button */
 	#sidebar-button {
 		position: fixed;
