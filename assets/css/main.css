@@ -2247,6 +2247,12 @@ input, select, textarea {
 			body, input, textarea, select {
 				font-size: 13pt;
 			}
+		
+		/* Sidebar */
+
+		#sidebar {
+			padding-top: 6em;
+		}
 
 	}
 
@@ -2328,6 +2334,12 @@ input, select, textarea {
 				margin-top: 2em;
 				padding-top: 2em;
 			}
+
+		/* Sidebar */
+
+		#sidebar {
+			padding-top: 6em;
+		}
 
 	}
 
