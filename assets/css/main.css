@@ -191,7 +191,7 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin-bottom: 2em;
+		margin-bottom: 2em !important;
 	}
 
 	ul, ol, dl, table, blockquote {
