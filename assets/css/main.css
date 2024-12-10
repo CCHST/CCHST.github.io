@@ -2597,7 +2597,7 @@ input, select, textarea {
 			button,
 			.button {
 				letter-spacing: 2px;
-				display: block;
+				display: inline-block;
 				padding: 1em 0 1em 0;
 				width: 100%;
 			}
