@@ -1856,6 +1856,13 @@ input, select, textarea {
 		margin: 0 0 2.5em 0;
 	}
 
+	.box.post p {
+		font-family: 'Arial', sans-serif;
+		font-size: 16pt;
+		color: #555;
+		line-height: 1.8em;
+	}
+	
 /* Icons */
 
 	.icon {

@@ -45,10 +45,10 @@
 										with no sidebar at all!</h2>
 									</header> -->
 									<span class="image featured"><img src="images/pic04.jpg" alt="" /></span>
-									<h3>In 2021, I co-founded a startup with the mission of leveraging technology to create a tool that transforms lengthy paragraphs and essays into structured graphs, enabling users to quickly grasp main ideas without reading the entire text. We successfully secured $10,000 in funding, which deepened my understanding of the transformative power of technology in driving business innovation. This experience sparked my passion for utilizing technology in business and led me to immerse myself in the field of data analysis.</h3>
-									<h3>With two years of professional experience as a Data Analyst in the financial and e-commerce sectors, I have developed strong expertise in exploratory data analysis, designing algorithms to optimize business processes, and applying machine learning models to solve complex problems. My proficiency in data visualization tools like Tableau has enabled me to translate complex data into actionable insights for key stakeholders.</h3>
-									<h3>Currently, as a graduate student in Technology Management at the University of Illinois Urbana-Champaign (UIUC), I am focusing on data modeling, machine learning applications, and the strategic use of technology to drive innovation. My goal is to harness these skills to deliver impactful solutions that bridge the gap between technology and business strategy.</h3>
-									<h3>Thank you for taking the time to learn about me. I am eager to connect, collaborate, and contribute to meaningful projects that create value through data and technology.</h3>
+									<p>In 2021, I co-founded a startup with the mission of leveraging technology to create a tool that transforms lengthy paragraphs and essays into structured graphs, enabling users to quickly grasp main ideas without reading the entire text. We successfully secured $10,000 in funding, which deepened my understanding of the transformative power of technology in driving business innovation. This experience sparked my passion for utilizing technology in business and led me to immerse myself in the field of data analysis.</p>
+									<p>With two years of professional experience as a Data Analyst in the financial and e-commerce sectors, I have developed strong expertise in exploratory data analysis, designing algorithms to optimize business processes, and applying machine learning models to solve complex problems. My proficiency in data visualization tools like Tableau has enabled me to translate complex data into actionable insights for key stakeholders.</p>
+									<p>Currently, as a graduate student in Technology Management at the University of Illinois Urbana-Champaign (UIUC), I am focusing on data modeling, machine learning applications, and the strategic use of technology to drive innovation. My goal is to harness these skills to deliver impactful solutions that bridge the gap between technology and business strategy.</p>
+									<p>Thank you for taking the time to learn about me. I am eager to connect, collaborate, and contribute to meaningful projects that create value through data and technology.</p>
 								</article>
 
 						</div>
@@ -62,60 +62,56 @@
 							<h2>Questions or comments? <strong>Get in touch:</strong></h2>
 						</header>
 						<div class="row">
-							<div class="col-6 col-12-medium">
+							<div class="col-12">
 								<section>
-									<form method="post" action="#">
+									<form onsubmit="event.preventDefault(); sendEmail();">
 										<div class="row gtr-50">
 											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
+												<input id="name" name="name" placeholder="Name" type="text" required />
 											</div>
 											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
+												<input id="email" name="email" placeholder="Email" type="email" required />
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
+												<textarea id="message" name="message" placeholder="Message" required></textarea>
 											</div>
-											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
+											<div class="col-12" style="text-align: right;">
+												<a href="#" class="button icon solid fa-envelope" onclick="sendEmail();">Send Message</a>
 											</div>
 										</div>
 									</form>
 								</section>
 							</div>
-							<div class="col-6 col-12-medium">
+							
+							<script>
+								function sendEmail() {
+									// 獲取用戶輸入值
+									const name = document.getElementById("name").value;
+									const email = document.getElementById("email").value;
+									const message = document.getElementById("message").value;
+							
+									// 構造 mailto 連結
+									const subject = `Message from ${name}`;
+									const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+									const mailtoLink = `mailto:cindycheng3@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+							
+									// 跳轉到 mailto 連結
+									window.location.href = mailtoLink;
+								}
+							</script>
 								<section>
-									<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-									leo nibh, rutrum eu malesuada.</p>
 									<div class="row">
-										<div class="col-6 col-12-small">
+										<div class="col-12" style="margin-bottom: 1px;">
 											<ul class="icons">
-												<li class="icon solid fa-home">
-													1234 Somewhere Road<br />
-													Nashville, TN 00000<br />
-													USA
-												</li>
 												<li class="icon solid fa-phone">
-													(000) 000-0000
-												</li>
-												<li class="icon solid fa-envelope">
-													<a href="#">info@untitled.tld</a>
+													(217) 979-8292
 												</li>
 											</ul>
 										</div>
-										<div class="col-6 col-12-small">
+										<div class="col-12" style="margin-top: 1px;">
 											<ul class="icons">
-												<li class="icon brands fa-twitter">
-													<a href="#">@untitled</a>
-												</li>
-												<li class="icon brands fa-instagram">
-													<a href="#">instagram.com/untitled</a>
-												</li>
-												<li class="icon brands fa-dribbble">
-													<a href="#">dribbble.com/untitled</a>
-												</li>
-												<li class="icon brands fa-facebook-f">
-													<a href="#">facebook.com/untitled</a>
+												<li class="icon brands fa-linkedin">
+													<a href="https://www.linkedin.com/in/cindy-cheng-321763227/">LinkedIn</a>
 												</li>
 											</ul>
 										</div>
@@ -126,7 +122,7 @@
 					</div>
 					<div id="copyright" class="container">
 						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> & Cindy</li>
 						</ul>
 					</div>
 				</section>
