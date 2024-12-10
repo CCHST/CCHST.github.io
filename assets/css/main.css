@@ -190,13 +190,7 @@ input, select, textarea {
 	}
 
 	p {
-		text-align: justify !important;
-		margin-bottom: 2em !important;
-		font-family: 'Source Sans Pro' !important;
-		font-weight: 300 !important;
-		color: #777 !important;
-		line-height: 1.65em !important;
-		font-size: 15pt !important;
+		text-align: justify;
 	}	
 
 	ul, ol, dl, table, blockquote {
