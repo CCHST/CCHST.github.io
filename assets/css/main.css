@@ -191,7 +191,8 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-	}	
+		margin-bottom: 2em;
+	}
 
 	ul, ol, dl, table, blockquote {
 		margin-bottom: 2em;
@@ -1760,9 +1761,6 @@ input, select, textarea {
 	input[type="submit"],
 	input[type="reset"],
 	button,
-	section p + .button {
-		margin-top: 2em; /* 按钮与段落文字的距离 */
-	}
 	.button {
 		-moz-transition: all 0.25s ease-in-out;
 		-webkit-transition: all 0.25s ease-in-out;
@@ -2249,12 +2247,6 @@ input, select, textarea {
 			body, input, textarea, select {
 				font-size: 13pt;
 			}
-		
-		/* Sidebar */
-
-			/* #sidebar {
-				padding-top: 6em;
-			} */
 
 	}
 
@@ -2336,12 +2328,6 @@ input, select, textarea {
 				margin-top: 2em;
 				padding-top: 2em;
 			}
-
-		/* Sidebar */
-
-			/* #sidebar {
-				padding-top: 6em;
-			} */
 
 	}
 
@@ -2551,9 +2537,9 @@ input, select, textarea {
 
 		/* Sidebar */
 
-			/* #sidebar {
+			#sidebar {
 				padding-top: 6em;
-			} */
+			}
 
 	}
 
